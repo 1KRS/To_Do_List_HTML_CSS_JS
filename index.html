@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;/salt&gt; :: ToDo</title>
+  <link rel="stylesheet" type="text/css" href="./style/todo.css">
+  <script defer src="./js/todo.js"></script>
+</head>
+
+<body>
+  <main class="app">
+    <section class="section greeting">
+      <h2 class="title">
+        List of <input type="text" class="name" id="name" placeholder="name">
+      </h2>
+    </section>
+
+    <section class="section create-todo">
+      <h3 class="h3-title mrg-btm-5">New To Do</h3>
+
+      <form class="new-todo-form">
+        <input  type="text" 
+                name="content" 
+                class="new-todo-item"
+                data-testid="txtTodoItemTitle"
+                id="content" 
+                placeholder="eg Buy ice cream" required/>
+      
+        <h4 class="h4-title">Categories</h4>
+        <div class="options">
+          
+          <label class="label">
+            <input  type="radio" 
+                    name="category" 
+                    class="category1" 
+                    value="salt" />
+            <span class="span circle salt"></span>
+            <div>Salt</div>
+          </label>
+
+          <label class="label">
+            <input  type="radio" 
+                    name="category" 
+                    class="category2" 
+                    value="personal" checked />
+            <span class="span circle personal"></span>
+            <div>Personal</div>
+          </label>
+
+        </div>
+        <input type="submit" data-testid="btnAddTodo" value="Add">
+      </form>
+    </section>
+
+    <section class="section todo-list-section">
+      <h3 class="h3-title">Don't forget to:</h3>
+      <div class="todo-list" data-testid="todoList">
+
+        <!-- Here go the todos -->
+
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
